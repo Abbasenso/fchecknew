@@ -1,10 +1,8 @@
-
 import 'package:fchecknew/Screens/login.dart';
 import 'package:fchecknew/Screens/user/user_main.dart';
 //import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-
 
 // void main() {
 //   WidgetsFlutterBinding.ensureInitialized();
@@ -64,28 +62,23 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 //   }
 // }
 
-void main (){
+void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-  title: 'F-Check',
-theme: ThemeData(
-primarySwatch: Colors.blue
-),
-home: myApp(),
+    title: 'FCheck',
+    theme: ThemeData(primarySwatch: Colors.blueGrey),
+    home: myApp(),
   ));
 }
 
 class myApp extends StatefulWidget {
-
   @override
   _myAppState createState() => _myAppState();
 }
 
 class _myAppState extends State<myApp> {
-
   @override
   Widget build(BuildContext context) {
-
     return Login();
   }
 }
